@@ -1,0 +1,91 @@
+<!DOCTYE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="js4.js"></script>
+		<link rel="stylesheet" type="text/css" href="frontPage.css"/>
+		<style type="text/css">
+			body{
+				background: url("js4.jpg");
+				background-size:100%;
+				background-repeat:repeat;
+			}
+			#inputText {
+				margin-left: 500px;
+				padding-top: 50px;
+			}
+			.zoom {
+				padding-left: 500px;
+	
+			}
+		</style>
+	</head>
+	<body>
+		<div id="img">
+			<img src="mainIcon.png">
+		</div>
+		<h1 style="text-align:center; font-family:Caflisch Script Pro, cursive">LEARN TECH ONLINE</h1>
+		<nav> 
+			<ul>
+				<li><a href="frontPage.html">Home</a></li>
+				<li><a href="coursesPage.html">Courses</a></li>
+				<li><a href="registerPage.php">Register</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<h1 style="text-align:center;color:purple">Lets Play With Strings.</h1>
+		<p><i><b>This is similar to missing letters game.</b><br/>
+				Here we have used javascript functionalities to determine if the missing letters 
+				entered by the user matches with the correct letters.</br>If the letters doesnt match with the correct letters,
+				it checks and display the error message.</i>
+		</p>
+		<div id="inputText">
+			
+				<input type="text" value="W" style="width:20px"/>
+				<input type="text" value="" id="ltr11" style="width:20px"/>
+				<input type="text" value="N" style="width:20px"/>
+				<input type="text" value="D"style="width:20px"/>
+				<input type="text" value="" id="ltr12" style="width:20px"/>
+				<input type="text" value="R" style="width:20px"/>
+				<input type="button" value="Check" id="check1"/><label id="r1"></label></br></br>
+
+				<input type="text" value="F" style="width:20px"/>
+				<input type="text" value="" id="ltr21" style="width:20px"/>
+				<input type="text" value="I" style="width:20px"/>
+				<input type="text" value="E"style="width:20px"/>
+				<input type="text" value="" id="ltr22" style="width:20px"/>
+				<input type="text" value="D" style="width:20px"/>
+				<input type="button" value="Check" id="check2"/><label id="r2"></label></br></br>
+				
+				<input type="text" value="P" style="width:20px"/>
+				<input type="text" value="" id="ltr31" style="width:20px"/>
+				<input type="text" value="Z" style="width:20px"/>
+				<input type="text" value="Z"style="width:20px"/>
+				<input type="text" value="" id="ltr32" style="width:20px"/>
+				<input type="text" value="E" style="width:20px"/>
+				<input type="button" value="Check" id="check3"/><label id="r3"></label><br></br>
+				
+				<input type="text" value="F" style="width:20px"/>
+				<input type="text" value="" id="ltr41" style="width:20px"/>
+				<input type="text" value="T" style="width:20px"/>
+				<input type="text" value="H"style="width:20px"/>
+				<input type="text" value="" id="ltr42" style="width:20px"/>
+				<input type="text" value="R" style="width:20px"/>
+				<input type="button" value="Check" id="check4"/><label id="r4"></label></br></br>
+		</div>
+
+		<p>In the above example, we have used the text boxes to display the letters.<br>
+		The missing letters are stored in an <i>Array</i> for each word.<br> When the user enters the missing letters and click on 
+		check button,the eventlisteners and and <br>
+		<i>'getElementId'</i> properties takes the user input and store it in variables and 
+		then compares with the letters stored in an array.<br>It checks if the missing letters entered matches with correct letters 
+		or not.</p>
+		<div class = "zoom">
+				<a href="htmlPage.html"><img src="html-5.png" alt="HTML-5" style="width:50px;height:50px" hspace="1" ></a> 
+				<a href="cssMainPage.html"><img src="css3.png" alt="CSS-3" style="width:50px;height:50px" hspace="1"></a>
+				<a href="JavaScript_course.html"><img src="javascript-icon.png" alt="JavaScript" style="width:50px;height:50px" hspace="1"></a> 
+				<a href="quiz.php"><img src="php-icon.png" alt="PHP" style="width:50px;height:50px" hspace="1"></a>
+		</div>
+	</body>
+</html>

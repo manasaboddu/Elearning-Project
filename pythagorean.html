@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8"/>
+		<!-- 
+			This page is for "JavaScript DOM example2-Finding whether the sides entered forms a 
+			right angeled triangle or not by satisfying pythagorean theorem."
+			Created by Project Group:7
+		-->
+		<title>Front Page</title>
+		<link rel="stylesheet" type="text/css" href="frontPage.css"/>
+		<style type="text/css">
+			body{
+				background:url("js4.jpg");
+				color:black;
+				background-size:100%;
+				background-repeat:repeat;
+			}
+			xplCss{
+				color:white;
+			}
+			
+			.zoom {
+				padding-left: 500px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="img">
+			<img src="mainIcon.png">
+		</div>
+		<h1 style="text-align:center; font-family:Caflisch Script Pro, cursive;color:black;">LEARN TECH ONLINE</h1>
+		<nav> 
+			<ul>
+				<li><a href="frontPage.html">Home</a></li>
+				<li><a href="coursesPage.html">Courses</a></li>
+				<li><a href="registerPage.php">Register</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<h1 style="color:Brown;text-align:center;">JavaScript used to explain pythagorean theorem </h1>
+		<script type="text/javascript">
+		//variables to accept user input and to store the validated inputs.
+			var valInput1=0;
+			var valInput2=0;
+			var valInput3=0;
+			
+			//using window.prompt to accept user input.
+			var userInput1=window.prompt("enter value of side1:");
+			//using nested if-statements to take userInput and assinging the validated input to variables.
+			if(valInput1=parseInt(userInput1)){
+				//if input1 is valid prompt for second input and validate it.
+				var userInput2=window.prompt("enter value of side2:");
+				
+				if(valInput2=parseInt(userInput2)){
+					//if input1 is valid prompt for third input and validate it.
+					var userInput3=window.prompt("enter value of hypotenuse:");
+					
+					if(valInput3=parseInt(userInput3)){
+						//if all the user inputs are valid, using math functions, compute the squares and square root of inputs.
+						if(userInput3==(Math.sqrt((Math.pow(userInput1,2))+(Math.pow(userInput2,2))))){
+							document.write("Yes the values entered satisfies the pythagorean theorm and Hence is a RIGHT angle triangle!!!");
+						}else{
+							document.write("The sides entrered doesnot form a right angled triangle as they don't satisfy the pythagorean theorm.");
+						}
+					}else{
+							document.write("You entered an invalid input.Please Try Again");//window.alert("invalid input3");//alert the user "invalid input3"
+					}
+				}else{
+					document.write("You entered an invalid input..Please Try Again");//window.alert("invalid input2");//alert the user "invalid input2"
+				}
+			}else{
+				document.write("You entered an invalid input.Please Try Again");//window.alert("invalid input1");//alert the user "invalid input1"
+			}//end of if-else
+		</script>
+		<div id="pCss">
+		<p id="explCss"><strong><u>Explanation</u></strong></p>
+		<p>
+			<b>Pythagorean Theorem</b>-One of the best known mathematical formulas, which provides the relationship between the sides of a right angeled triangle.
+				A right angeled triangle consists of two sides and a hypotenuse.
+			<br/>To satify pythagorean theorm, the length of the hypotenuse should be equal to square root of the sum of the squares of the other two sides.
+		</p>  
+		<ul>
+			<li>Here we have used JavaScript to check whether the sides of a triangle entered by user forms a right angeled triangle or not.</li>
+			<li>We have used <strong>"window.prompt"</strong> to accept input from a user.
+			<li>Prompt is the method of window object and it facilitates the user to enter the values as shown in the example.</li>
+			</li>
+			<li>We have used the conditional statements-<b><em>if..else</em></b> to check whether the hypotenuse is
+			equal to the square root of the sum of squares of the other two sides.</li> 
+			<li>Then finally, we have displayed the result using <strong>"document.write".</strong></li>
+			
+		</ul>
+		</div>
+		<div class = "zoom">
+			<a href="htmlPage.html"><img src="html-5.png" alt="HTML-5" style="width:50px;height:50px" hspace="1" ></a> 
+			<a href="cssMainPage.html"><img src="css3.png" alt="CSS-3" style="width:50px;height:50px" hspace="1"></a>
+			<a href="JavaScript_course.html"><img src="javascript-icon.png" alt="JavaScript" style="width:50px;height:50px" hspace="1"></a> 
+			<a href="quiz.php"><img src="php-icon.png" alt="PHP" style="width:50px;height:50px" hspace="1"></a>
+		</div>
+	
+	</body>
+</html>

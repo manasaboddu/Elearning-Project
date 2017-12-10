@@ -1,0 +1,96 @@
+body {
+		background: url("laptop.jpg");/*setting a background image*/
+		background-repeat: repeat-y; /*background repeats vertically*/
+		background-size: 100%;
+		margin-top: 25px;/*setting margin*/
+		margin-bottom: 25px;
+		margin-left: 25px;
+		margin-right: 25px;
+		vertical-align: bottom;
+		text-align: bottom;
+}
+
+nav {/*styling for navigation bar*/
+		font-weight: bold;
+		color: white;
+		border: 15px Green;
+		text-align: center;
+		background-color: Black;
+		font-style: Italic;
+}	
+	   
+nav ul li {/*styling for elements under nav*/
+		display: inline-block; 
+		color: white;
+		text-align: center;
+		padding: 14px 16px;											
+		text-decoration: none;
+}
+	
+
+nav ul li:hover {
+		background-color: none;
+}
+
+a:hover {/*styling for elements to highlight when we hover on it*/
+		-webkit-stroke-width: 5.3px;
+		-webkit-stroke-color: #FFFFFF;
+		-webkit-fill-color: #FFFFFF;
+		text-shadow: 1px 0px 20px yellow;
+		font-size:20px;
+}
+			
+a {		/*styling for anchor elements */
+		font-size:16px;
+		color: blue;
+		transition: all 0.3s ease-in;
+		text-decoration:none;
+}
+/*styling for elements under particular id*/	
+	
+#heading1 {
+		padding-left: 200px;
+		padding-top:200px;
+		margin-top: 200px;
+		font-weight:bold;
+}
+			
+#heading2 {
+		padding-left: 200px;
+		padding-top:10px;
+		font-weight:bold;
+}
+			
+#quotes {
+		padding-left: 200px;
+		padding-top:20px;
+}
+			
+#mainQuotes {
+		position:fixed;
+}
+
+p {
+		display: inline-block;
+}
+
+#footer {
+		padding-left: 200px;
+}
+	
+#footerMiddle {
+		padding-left: 150px;
+}
+	
+#footerRight {
+		padding-left: 150px;
+}
+#img{
+		position:absolute;
+		float:left;
+		margin-left:400px;
+		margin-top:-15px;
+		display:inline-block;
+		background-repeat: repeat-y; /*background repeats vertically*/
+		background-size: 100%;
+}

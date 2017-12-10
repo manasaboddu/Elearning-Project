@@ -1,0 +1,76 @@
+`<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8"/>
+		<!-- 
+			This page is for "JavaScript DOM example-FInding whether the sides entered forms a rhombus or not."
+			Created by Project Group:7
+		-->
+		<title>Front Page</title>
+		<script type="text/javascript" src="javascript_1.js"></script>
+		<link rel="stylesheet" type="text/css" href="frontPage.css"/>
+		<style type="text/css">
+			body{
+				background:url("js4.jpg");
+				color:black;
+				background-size:100%;
+				background-repeat:repeat;
+			}
+			#img1{
+				position:absolute;
+				float:left;
+				margin-left:400px;
+				margin-top:18px;
+				display:inline-block;
+			}
+			.zoom {
+				padding-left: 500px;
+			}
+			.textClass{
+				size:100%;
+				border:2px;
+				background-image:url("bg-3.jpg");
+				background-attachment:fixed;
+				color:black;
+				border-radius:20px;
+				padding:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="img1">
+			<img src="mainIcon.png">
+		</div>
+		<h1 style="text-align:center; font-family:Caflisch Script Pro, cursive;color:black;margin-left:20px;">LEARN TECH ONLINE</h1>
+		<nav> 
+			<ul>
+				<li><a href="frontPage.html">Home</a></li>
+				<li><a href="coursesPage.html">Courses</a></li>
+				<li><a href="registerPage.php">Register</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<h1 style="text-align:center"><u>This page explains how a Javascript works with DOM.</u></h1>
+		<p style="text-align:left;">Find whether the sides you entered for a quadrilateral forms a rhombus or not by satisfying the mathematical property, 
+			<em>"All the sides of a rhombus are equal"</em></p>
+		<h3 id="result" style="color:red;"></h3>
+		<form action="" name="form1">
+			
+			Enter side 1:<input type="text" name="number"/>
+			Enter side 2:<input type="text" name="number"/>
+			Enter side 3:<input type="text" name="number"/>
+			Enter side 4:<input type="text" name="number"/>
+			<input type="button" id="submit" value="Submit" />
+			<input type="button" id="reset" value="Restart" />
+			<p><textarea class="textClass" id="explanation" rows="14" cols="180">Explanation:</textarea></p>
+		</form>
+		<div class = "zoom">
+				<a href="htmlPage.html"><img src="html-5.png" alt="HTML-5" style="width:50px;height:50px" hspace="1" ></a> 
+				<a href="cssMainPage.html"><img src="css3.png" alt="CSS-3" style="width:50px;height:50px" hspace="1"></a>
+				<a href="JavaScript_course.html"><img src="javascript-icon.png" alt="JavaScript" style="width:50px;height:50px" hspace="1"></a> 
+				<a href="quiz.php"><img src="php-icon.png" alt="PHP" style="width:50px;height:50px" hspace="1"></a>
+		</div>
+		</div>
+	</body>
+</html>
+ 

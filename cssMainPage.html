@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	    <!--Created by Project Group 7
+		This page gives a brief description about CSS-->
+		<meta charset="utf-8"/>
+		<title>CSS Main Page</title>
+		<link rel="stylesheet" type="text/css" href="frontPage.css"/>
+		<script type= "text/javascript" src="frontPage.js"> </script>
+		<style type="text/css">
+			body{
+				background: url("cssImage.jpg");
+			}
+			table1 thead,tr,td {
+				text-align:center;
+				background-color:#FFB6C1;
+				box-shadow: 10px 10px 5px #888888;
+				border: 1px solid black;
+				border-collapse: collapse;
+				width: auto;
+				height:auto;
+			} 
+
+			#cssHeading {
+				background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, 	#22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+				background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+				color:transparent;
+				-webkit-background-clip: text;
+				background-clip: text;
+			}
+
+			#cssLine {
+				font-family:Caflisch Script Pro, cursive;
+			}
+
+			#aboutCSS{
+				font-family:Caflisch Script Pro, cursive;
+			}
+		
+			.zoom {
+				padding-left: 500px;	
+			}
+		</style>
+	</head>
+	<body>
+		<div id="img">
+			<img src="mainIcon.png">
+		</div>
+		<h1 style="text-align:center; font-family:Caflisch Script Pro, cursive">LEARN TECH ONLINE</h1>
+		<nav> 
+			<ul>
+				<li><a href="frontPage.html">Home</a></li>
+				<li><a href="coursesPage.html">Courses</a></li>
+				<li><a href="registerPage.php">Register</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<h1 id= "cssHeading"><i> Intoduction to CSS</i></h1>
+		<p id="cssLine"> <b>What is CSS and why is it used??</b></p> 
+		<p><b>CSS</b> stands for <b>Cascading Style Sheet</b> used for describing the <b>presentation</b> of a document written in a <b> markup language.</b> <br>
+		<b>CSS</b> is a cornerstone technology used by most websites to create <b>visually engaging webpages</b>, <b>user interfaces for web applications</b>, and <b> user interfaces for many mobile applications</b>. <br> </p>
+		<div id ="cssList">
+			<h2 id = "aboutCSS"><i>About CSS</i></h2>
+				<li> CSS has a simple syntax and consists of a <b>list of rules.</b> </li>
+				<li> Rule-set consists of <b> one or more selectors, </b>and a <b>declaration block.</b></li>
+				<li> In <b>CSS</b>, <b>selectors</b> declare which part of the markup a style applies to by <b>matching tags</b> and <b>attributes</b> in the markup itself.</li>
+				<li> <b>Multiple selectors</b> may be joined in a spaced list to specify elements by <b>location, element type, id</b> or <b>class</b>. </li>
+		</div> <br>
+			
+		<p>
+			<table id="table1"><caption style = "font-family:Caflisch Script Pro, cursive"> <b>CSS Selectors </b></caption>
+				<thead style="color: blue"><tr><td><b>Selector</b></td><td><b>Example</b></td><td><b>Example Description</b></td></tr> </thead>
+				<tr><td>.class</td><td>.intro</td><td>Selects all elements with class ="intro"</td></tr>
+				<tr><td>#id</td><td>#firstname</td><td>Selects the element with id="firstname"</td></tr>
+				<tr><td>*</td><td> * </td><td>Selects all elements</td></tr>
+				<tr><td>element</td><td>p</td><td> Selects all "paragraph" elements</td></tr>
+				<tr><td>element,element</td><td>div,p</td><td> Selects all "div" elements and "paragraph" elements</td></tr>
+				<tr><td>element element</td><td>div p</td><td> Selects all "paragraph" elements inside "div" elements</td></tr>
+				<tr><td>element>element</td><td>div>p</td><td> Selects all "paragraph" elements where the parent is a "div" element</td></tr>
+			</table>
+		</p>
+	  
+		<p><i><b>To know more about CSS click on the following link</b></i>
+			<a href="css_example1.html">Example-1</a>
+			<a href="css_example2.html">Example-2</a>
+		</p>
+		<div class = "zoom">
+				<a href="htmlPage.html"><img src="html-5.png" alt="HTML-5" style="width:50px;height:50px" hspace="1" ></a> 
+				<a href="cssMainPage.html"><img src="css3.png" alt="CSS-3" style="width:50px;height:50px" hspace="1"></a>
+				<a href="JavaScript_course.html"><img src="javascript-icon.png" alt="JavaScript" style="width:50px;height:50px" hspace="1"></a> 
+				<a href="quiz.php"><img src="php-icon.png" alt="PHP" style="width:50px;height:50px" hspace="1"></a>
+		</div>
+	</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+  

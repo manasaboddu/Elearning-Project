@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8"/>
+		<!-- 
+			This page is for "html course page".
+			Created by Project Group:7
+		-->
+		<title>Front Page</title>
+		<script type="text/javascript" src="htmlPageJs.js"></script>
+		<link rel="stylesheet" type="text/css" href="frontPage.css"/>
+		<style type="text/css">
+			#stopSlideShow{
+					margin-left:250px;
+			}
+			#startSlideShow{
+					margin-left:140px;
+			}
+			.imgDisplay{
+					float:left;
+					margin-top:0px;
+					margin-bottom:0px;
+					margin-left:150px;	
+			}
+			#img1{
+					width:300px;
+					height:200px;
+			}
+			.descDiv{
+					float:center;
+					margin-top:30px;
+					margin-left:600px;
+					text-align: justify;
+					color:black;
+			}
+			body{
+					background-image:url(html_bg.jpg);
+					background-repeat:repeat;
+			}
+			.zoom {
+					padding-left:500px;
+			}
+			
+			#moreExpl {
+					margin-top:100px;
+					margin-left:690px;
+					position:relative;
+					color:Orange;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="img">
+			<img src="mainIcon.png">
+		</div>
+		<h1 style="text-align:center; font-family:Caflisch Script Pro, cursive">LEARN TECH ONLINE</h1>
+		<nav> 
+			<ul>
+				<li><a href="frontPage.html">Home</a></li>
+				<li><a href="coursesPage.html">Courses</a></li>
+				<li><a href="registerPage.php">Register</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="mainDiv">
+			<div><p><input type="button" value="Click here to learn HTML through slideshow"  id="startSlideShow" style="color:Green;font-weight:bolder;"/>
+				<input type="button" value="Click here to pause the slideshow"  id="stopSlideShow" style="color:red;font-weight:bolder;" /></p>
+			</div>
+			<div id="imgAnddesc">
+				<div class="imgDisplay">
+					<img id="img1" src=""/>
+				</div>
+				<div class="descDiv">
+					<p id="resultDesc"></p>
+				</div>
+			</div>
+				<p id ="moreExpl"><a href="" id="moreInfo" style="color:Red;font-weight:bolder;font-size:25px;">Click here for more information</a></p>
+			<div class = "zoom">
+				<a href="htmlPage.html"><img src="html-5.png" alt="HTML-5" style="width:50px;height:50px" hspace="1" ></a> 
+				<a href="cssMainPage.html"><img src="css3.png" alt="CSS-3" style="width:50px;height:50px" hspace="1"></a>
+				<a href="JavaScript_course.html"><img src="javascript-icon.png" alt="JavaScript" style="width:50px;height:50px" hspace="1"></a> 
+				<a href="quiz.php"><img src="php-icon.png" alt="PHP" style="width:50px;height:50px" hspace="1"></a>
+			</div>
+		</div>
+			
+	</body>
+</html>

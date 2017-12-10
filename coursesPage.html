@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<!--Created by Project Group:7
+		This is a Course Page with the icons of JavaScript, HTML, CSS and PHP. 
+		Clicking on the icon takes the user to the required page. 
+		The Start learning Now button is linked to the Register Page.-->
+		<meta charset="utf-8"/>
+		<title>CoursePage</title>
+		<link rel="stylesheet" type="text/css" href="frontPage.css"/>
+		<style type="text/css">
+			#courseText{
+				padding-left: 500px;
+			}
+			#learnButton{
+				margin-left: 570px;
+				background-color: white;
+				color: white;
+				border: 2px solid green; 
+				border-radius: 4px;
+				background-color: green;
+				font-family:"Comic Sans MS", cursive, sans-serif;
+			}
+			.zoom {
+				margin-top: 100px;
+				padding-left: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="img">
+			<img src="mainIcon.png">
+		</div>
+		<h1 style="text-align:center; font-family:Caflisch Script Pro, cursive">LEARN TECH ONLINE</h1>
+		<nav> 
+			<ul>
+				<li><a href="frontPage.html">Home</a></li>
+				<li><a href="coursesPage.html">Courses</a></li>
+				<li><a href="registerPage.php">Register</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id = "courseText">
+			<h3><br>You only have to know one thing</h3>
+			<h1><i>You can learn anything</i></h1>
+			<h3>For Free. For Everyone. Forever!!</h3>
+		</div>
+		<div>
+			<form action="registerPage.php">
+			<input type="submit" value = "Start Learning Now" id = "learnButton" onclick="window.location.href='registerPage.php'"/>
+			</form>
+		</div>
+		<div class = "zoom">
+			<a href="htmlPage.html"><img src="html-5.png" alt="HTML-5" style="width:120px;height:120px" hspace="55" ></a> 
+			<a href="cssMainPage.html"><img src="css3.png" alt="CSS-3" style="width:120px;height:120px" hspace="55"></a>
+			<a href="JavaScript_course.html"><img src="javascript-icon.png" alt="JavaScript" style="width:120px;height:120px" hspace="55"></a> 
+			<a href="quiz.php"><img src="php-icon.png" alt="SQL" style="width:120px;height:120px" hspace="55"></a>
+		</div>
+	</body>
+</html>

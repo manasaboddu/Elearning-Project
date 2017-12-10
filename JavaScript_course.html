@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8"/>
+		<!-- 
+			This page is for "JavaScript Introduction".
+			Created by Project Group:7
+		-->
+		<title>Front Page</title>
+		<link rel="stylesheet" type="text/css" href="frontPage.css"/>
+		<style type="text/css">
+			body{
+				background:url("js4.jpg");
+				color:black;
+				background-size:100%;
+				background-repeat:repeat;
+			}
+			#DOMdesc img{
+				float:left;
+				width:300px;
+				height:120px;
+			}
+			#DOMdesc floatText{
+				float:right;
+			}
+			# DOMdesc img:hover{
+				width:500px;
+				height:320px;
+			}	
+			#withOutDOM{
+				float:left;
+			}	
+			.zoom {
+				padding-left: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="img">
+			<img src="mainIcon.png">
+		</div>
+		<h1 style="text-align:center; font-family:Caflisch Script Pro, cursive;color:black;">LEARN TECH ONLINE</h1>
+		<nav> 
+			<ul>
+				<li><a href="frontPage.html">Home</a></li>
+				<li><a href="coursesPage.html">Courses</a></li>
+				<li><a href="registerPage.php">Register</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div>
+			<h1>Welcome to Javascript</h1>
+			<h3><u>Introduction:</u></h3>
+			<p>
+				<strong>Javascript</strong> is a client side , object based scripting language.Javascript is an Interpreted language.<br/>
+				<u>Scripting language</u> is any type of language, including JavaScript, that is capable of programmatically
+				controlling a web page or returning some sort of response to a web browser.
+			</p>
+			
+			<h3><u>JavaScript Advantages:</u></h3>
+			<ol>
+				<li>JavaScript is used for Client-side validation</li>
+				<li>JavaScript is used to enhance the functionality and appearance of web pages.</li>
+				<li>JavaScript makes the web pages more interactive and dynamic and it provides the programming foundation for the server-side scripting</li>
+			</ol>
+		 </div>
+		 <div id="DOMdesc">
+			<h3 id="withDom"><a href="javascriptPage.html" style="color:red">1.Click the link to understand DOM with an example.</a></h3>
+			<img class="imgClass" src="dom_element-tree.png" alt="DOM image" />
+			<p id="floatText">
+				<b><u>DOM-DOCUMENT OBJECT MODEL</u></b>.<br/>It is the most important object in the browser object model.
+				<p>JavaScript treats every element on a webpage as objects.One of the most powerful uses of JavaScript on the web is to modify page content based on external events, such as clicks or other user interactions.JavaScript specifies the objects, properties, and methods of the browser and the relationship between them
+				through a convention called the <b>Browser object model (BOM)</b>.One part of BOM is the DOM.</p>
+			</p>
+		</div>	
+		<div id="withOutDOM"><a href="pythagorean.html" style="color:red"><b>2.Click the link to understand Javascript without DOM with an example.</b>
+		</div></a><br>Please enter sides of triangle to check whether it forms a right angeled triangle or not.<br><br>
+		<div id="game" ><a href="js4.html" style="color:red"><b>3.Click here to play Missing Letters game.</b>
+		</div>
+		<div class = "zoom">
+				<a href="htmlPage.html"><img src="html-5.png" alt="HTML-5" style="width:50px;height:50px" hspace="1" ></a> 
+				<a href="cssMainPage.html"><img src="css3.png" alt="CSS-3" style="width:50px;height:50px" hspace="1"></a>
+				<a href="JavaScript_course.html"><img src="javascript-icon.png" alt="JavaScript" style="width:50px;height:50px" hspace="1"></a> 
+				<a href="quiz.php"><img src="php-icon.png" alt="PHP" style="width:50px;height:50px" hspace="1"></a>
+		</div>
+		</div>	
+	</body>
+</html>
+ 

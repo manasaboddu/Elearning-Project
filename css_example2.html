@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!----Created by Project Group 7
+		This page is created to implement backgound  CSS property without using DOM--->
+		
+		<meta charset="utf-8"> <!---default character encoding is UTF-8 --->
+		<title>css page</title> <!---title appears on title bar --->
+		<script type="text/javascript">
+			function changeBackgroundColor(){
+				//creating event listeners for changing the background color.
+				document.getElementById("backgroundColor").addEventListener("click", changeColor);
+			}//end function hangeBackgroundColor
+	
+			function changeColor(){
+				var backgroundColor=document.getElementById("backgroundColor");
+				var changeColor = backgroundColor.value;
+				document.body.style.backgroundColor = changeColor;
+			}//end function changeColor
+		</script>
+		<link rel="stylesheet" type="text/css" href="frontPage.css"/> 
+		<style type="text/css">
+			body{
+				background:none;
+			}
+			p{
+				display:inline;
+			}
+			.zoom{
+				padding-left:500px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="img">
+			<img src="mainIcon.png">
+		</div>
+		<h1 style="text-align:center; font-family:Caflisch Script Pro, cursive">LEARN TECH ONLINE</h1>
+		<nav> 
+			<ul>
+				<li><a href="frontPage.html">Home</a></li>
+				<li><a href="coursesPage.html">Courses</a></li>
+				<li><a href="registerPage.php">Register</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<p>This page explains the <b>CSS</b> <em><u>background</u></em> properties.</p>
+		<p>The <em>background CSS</em> property is used for setting the individual background values in a single place in the style sheet.
+			There are 8 different background properties that affects the HTML <b>elements</b>.</p>
+		<!--- creating order list to describe different types of background properties --->
+		<ol>
+			<li><b>Background-clip:</b>This <em>CSS property</em> lets you control how far a background image or color extends beyond an element's padding or content.</li>
+			<li><b>Background-color:</b>This <em>CSS property</em> sets the background color of an element, either through a color value or the keyword transparent.</li>
+			<li><b>Background-image:</b>This <em>CSS property</em> applies a graphic (e.g. PNG, SVG, JPG, GIF, WEBP) or gradient to the background of an element.</li>
+			<li><b>Background-origin:</b>This <em>CSS property</em> determines the background positioning area, that is the position of the origin of an image specified using the background-image CSS property.</li>
+			<li><b>Background-position:</b>This <em>CSS property</em> sets the initial position for each defined background image, relative to the background position layer defined by background-origin.</li>
+			<li><b>Background-repeat:</b>This <em>CSS property</em> defines how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all.</li>
+			<li><b>Background-size:</b>This <em>CSS property</em> specifies the size of the background images. The size of the image can be fully constrained or only partially in order to preserve its intrinsic ratio.</li>
+			<li><b>Background-attachment:</b>This <em>CSS property</em> determines whether that image's position is fixed within the viewport, or scrolls along with its containing block.</li>
+		</ol>
+		<h4>Here,we see an example:</h4>
+		<!--- creating a dropdown menu for the user to slect the desired color --->
+		<div>
+			<select id= "backgroundColor" onchange="changeBackgroundColor()">
+				<option selected value = "white">Choose A Background Color</option>
+				<option  value="#FFCC00" >Orange</option>
+				<option  value="#FF0000" >Red</option>
+				<option  value="#0000FF" >Blue</option>
+				<option  value="#FF00FF" >violet</option>
+		</select>
+		</div>
+		<br/>
+		<div>When the user selects one of the given colors,the background color changes to the selected color.<br>
+			Inorder to select different colors,we used dropdown menu.<br>
+			When the user selects a color from the dropdown, the getElementById prpoperty changes the background color to the selected color.</div>
+			<br/>
+	
+		<div class = "zoom">
+			<a href="htmlPage.html"><img src="html-5.png" alt="HTML-5" style="width:50px;height:50px" hspace="1" ></a> 
+			<a href="cssMainPage.html"><img src="css3.png" alt="CSS-3" style="width:50px;height:50px" hspace="1"></a>
+			<a href="JavaScript_course.html"><img src="javascript-icon.png" alt="JavaScript" style="width:50px;height:50px" hspace="1"></a> 
+			<a href="quiz.php"><img src="php-icon.png" alt="SQL" style="width:50px;height:50px" hspace="1"></a>
+		</div>
+	</body>
+</html>
